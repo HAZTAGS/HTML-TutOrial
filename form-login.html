@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HAZTAGS</title>
+</head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: linear-gradient(to right, #660a69 , #5514a0);
+        }
+
+        .container {
+            background : #54046d;
+            width: 350px; height: 450px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            color: #fff;
+            padding: 2em;
+        }
+
+        .heading{
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+
+        .box {
+            margin: 0.2em 0;
+        }
+
+        .container .box p {
+            color: rgba(255, 255, 255, 0.781);  
+        } 
+
+        .container .box div {
+            position: relative; 
+            width: 100%;
+            height: 48px;
+            margin: 0.5em 0;
+        }
+
+        .container .box input {
+            position: absolute; 
+            width: 100%; height: 100%; 
+            background: #5514a0; 
+            outline: none; 
+            transition: all .4s;
+            color: white; 
+            border: none;
+            padding-left: 0.8em; 
+            border-radius: 10px;
+        }
+
+        .container .box input:focus::placeholder{
+            color: white;
+        }
+
+        .login-btn {
+            width: 102%; height: 40px;
+            border: none; 
+            border-radius: 10px;
+            margin: 0.5em 0; 
+            transform: translate(-15);
+            cursor: pointer;
+            color: white;
+            background: linear-gradient(to right, #ff416c, #b3250c);
+            transition: all .4s;
+        }
+
+        .login-btn:hover{
+            transform: translate(-1%, 5%); 
+            box-shadow: 0 0 10px #ff416d65;
+        } 
+
+        .text{
+            font-size: 0.8em; margin-top: 0.5em;
+            text-align: center; color: rgba(255, 255, 255, 0.623); 
+        }
+
+        .text a{
+            color: rgba(255, 255, 255, 0.911);
+        } 
+    </style>
+
+<body>
+
+    <div class="container">
+        <p class="heading">Login Form</p>
+        <div class="box">
+            <p>Email</p>
+            <div>
+                <input type="email" placeholder="Input Email">
+            </div>
+        </div>
+        <div class="box">
+            <p>Password</p>
+            <div>
+                <input type="password" placeholder="Input Password">
+            </div>
+        </div>
+        <button class="login-btn">Login</button>
+        <p class="text">Belum punya akun? <a href="#">Daftar disini</a></p>
+    </div>
+    
+</body>
+</html>
